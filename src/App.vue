@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <svg
+      width="500"
+      height="500"
+    >
+      <TrebleClef :x="10" :y="10" />
+      <BassClef :x="10" :y="70" :width="36" :height="40" />
+      <Flat :x="50" :y="10" />
+      <Sharp :x="70" :y="30" />
+      <Note :x="100" :y="10" />
+    </svg>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TrebleClef from './components/TrebleClef.vue'
+import BassClef from './components/BassClef.vue'
+import Flat from './components/Flat.vue'
+import Sharp from './components/Sharp.vue'
+import Note from './components/Note.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    TrebleClef,
+    BassClef,
+    Flat,
+    Sharp,
+    Note,
   }
 }
 </script>
