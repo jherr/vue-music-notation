@@ -1,44 +1,51 @@
 <template>
   <div id="app">
-      <Notation>
+    <Notation
+      :showTrebleClef="true"
+      :showBassClef="true"
+    >
       <Staff
-        :showTrebleClef="true"
-        :showBassClef="true"
         :notes="firstChord"
       />
       <Staff
-        :showTrebleClef="true"
-        :showBassClef="true"
         :notes="secondChord"
       />
     </Notation>
 
-    <Notation>
+    <Notation
+      :showTrebleClef="true"
+      :showBassClef="true"
+    >
       <Staff
-        :showTrebleClef="true"
-        :showBassClef="true"
         :notes="[note]"
         v-for="note in trebleNotes"
         :key="note"
       />
     </Notation>
 
-    <Notation>
+    <Notation
+      :showTrebleClef="true"
+      :showBassClef="true"
+    >
       <Staff
-        :showTrebleClef="true"
-        :showBassClef="true"
         :notes="[note]"
         :active="index % 2 === 0"
         v-for="(note, index) in bassNotes"
         :key="note"
       />
     </Notation>
+
+    <Keyboard
+      :notes="cMajor"
+    />
   </div>
 </template>
 
 <script>
 import Notation from './components/Notation.vue'
 import Staff from './components/Staff.vue'
+import Keyboard from './components/Keyboard.vue'
+
 import utilities from './components/utilities';
 
 export default {
@@ -46,6 +53,7 @@ export default {
   components: {
     Notation,
     Staff,
+    Keyboard,
   },
   data() {
     const trebleNotes = [];
@@ -63,6 +71,11 @@ export default {
     }
 
     return {
+      cMajor: [
+        utilities.noteToMIDI('C'),
+        utilities.noteToMIDI('E'),
+        utilities.noteToMIDI('G'),
+      ],
       firstChord: [
         utilities.noteToMIDI('C'),
         utilities.noteToMIDI('D'),

@@ -6,8 +6,12 @@
       :showTrebleClef="showTrebleClef"
       :showBassClef="showBassClef"
       :showBrace="true"
+      :showEnd="true"
     />
     <slot />
+    <Staff
+      :showEnd="true"
+    />
   </div>
 </template>
 
@@ -24,6 +28,12 @@ export default {
   },
   components: {
     Staff,
+  },
+  provide() {
+    return {
+      showTrebleClef: this.showTrebleClef,
+      showBassClef: this.showBassClef,
+    };
   }
 }
 </script>

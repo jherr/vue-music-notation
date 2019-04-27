@@ -2,7 +2,7 @@
   <svg
     :width="width"
     :height="height"
-    style="display: inline;"
+    :class="{ container: true, active: active }"
     @click="onClick"
   >
     <line
@@ -112,18 +112,26 @@ const getNotesInfo = (notes) => {
 };
 
 export default {
-  props: {
+  inject: {
     showTrebleClef: {
       default: false,
     },
     showBassClef: {
       default: false,
-    },
+    }
+  },
+  props: {
     showBrace: {
+      default: false,
+    },
+    showEnd: {
       default: false,
     },
     notes: {
       default: null,
+    },
+    active: {
+      default: false,
     },
   },
   data() {
@@ -135,6 +143,9 @@ export default {
     const info = getNotesInfo(this.notes);
 
     let width = this.showBrace ? 45 : info.bothSides ? 31 : 20;
+    if (this.showEnd && !this.showBrace && !this.notes) {
+      width = 3;
+    }
 
     if (info.hasSharp) {
       width += 14;
@@ -159,7 +170,7 @@ export default {
     let middleC = null;
     if (this.showTrebleClef) {
       trebleClefStart = (LINE_HEIGHT * top) - 11;
-      if (this.showBrace) {
+      if (this.showEnd) {
         lines.push({
           x1: 1,
           x2: 1,
@@ -176,7 +187,7 @@ export default {
         middleC = (LINE_HEIGHT * top) - (LINE_HEIGHT * 3.5);
       }
       bassClefStart = LINE_HEIGHT * top;
-      if (this.showBrace) {
+      if (this.showEnd) {
         lines.push({
           x1: 1,
           x2: 1,
@@ -194,8 +205,8 @@ export default {
       let oddNote = 13;
 
       if (!info.bothSides) {
-        evenNote = 0;
-        oddNote = 0;
+        evenNote = 2;
+        oddNote = 2;
       }
 
       if (info.hasSharp) {
@@ -273,3 +284,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.container {
+  display: inline;
+}
+.active {
+  background-color: lightblue;
+}
+</style>
