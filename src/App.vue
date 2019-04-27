@@ -38,6 +38,10 @@
     <Keyboard
       :notes="cMajor"
     />
+
+    <Tabulature
+      :chords="tabChords"
+    />
   </div>
 </template>
 
@@ -45,6 +49,7 @@
 import Notation from './components/Notation.vue'
 import Staff from './components/Staff.vue'
 import Keyboard from './components/Keyboard.vue'
+import Tabulature from './components/Tabulature.vue'
 
 import utilities from './components/utilities';
 
@@ -54,6 +59,7 @@ export default {
     Notation,
     Staff,
     Keyboard,
+    Tabulature,
   },
   data() {
     const trebleNotes = [];
@@ -71,6 +77,10 @@ export default {
     }
 
     return {
+      tabChords: [
+        [ 0, 2, 2, 1, 0, 0 ],
+        [ -1, -1, -1, 1, 2, 1 ],
+      ],
       cMajor: [
         utilities.noteToMIDI('C'),
         utilities.noteToMIDI('E'),
