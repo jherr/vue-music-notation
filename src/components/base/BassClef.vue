@@ -47,7 +47,7 @@ export default {
       default: 0,
     },
     scale: {
-      default: 2,
+      default: 1.7,
     },
   },
 }
