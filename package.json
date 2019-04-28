@@ -1,6 +1,6 @@
 {
   "name": "vue-music-notation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && mv dist pages && vue-cli-service build --target lib --name vue-music-notation ./src/index.js",
@@ -10,6 +10,9 @@
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
     "test:unit": "vue-cli-service test:unit --coverage"
+  },
+  "repository": {
+    "url": "https://github.com/jherr/vue-music-notation"
   },
   "main": "src/index.js",
   "dependencies": {
