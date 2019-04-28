@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabStart renders 1`] = `
+<svg
+  height="105"
+  style="display: inline;"
+  width="20"
+>
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="15"
+    y1="97.5"
+    y2="22.5"
+  />
+   
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="20"
+    y1="97.5"
+    y2="97.5"
+  />
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="20"
+    y1="82.5"
+    y2="82.5"
+  />
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="20"
+    y1="67.5"
+    y2="67.5"
+  />
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="20"
+    y1="52.5"
+    y2="52.5"
+  />
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="20"
+    y1="37.5"
+    y2="37.5"
+  />
+  <line
+    style="stroke-width: 1; stroke: black;"
+    x1="15"
+    x2="20"
+    y1="22.5"
+    y2="22.5"
+  />
+   
+  <text
+    style="font-size: 12px; font-family: Arial, Verdana, Sans-Serif;"
+    x="0"
+    y="101.25"
+  >
+    
+    E
+  
+  </text>
+  <text
+    style="font-size: 12px; font-family: Arial, Verdana, Sans-Serif;"
+    x="0"
+    y="86.25"
+  >
+    
+    A
+  
+  </text>
+  <text
+    style="font-size: 12px; font-family: Arial, Verdana, Sans-Serif;"
+    x="0"
+    y="71.25"
+  >
+    
+    D
+  
+  </text>
+  <text
+    style="font-size: 12px; font-family: Arial, Verdana, Sans-Serif;"
+    x="0"
+    y="56.25"
+  >
+    
+    G
+  
+  </text>
+  <text
+    style="font-size: 12px; font-family: Arial, Verdana, Sans-Serif;"
+    x="0"
+    y="41.25"
+  >
+    
+    B
+  
+  </text>
+  <text
+    style="font-size: 12px; font-family: Arial, Verdana, Sans-Serif;"
+    x="0"
+    y="26.25"
+  >
+    
+    E
+  
+  </text>
+</svg>
+`;
