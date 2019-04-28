@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
 .container {
-  overflow-x: clip;
+  font-size: 0;
 }
 </style>

@@ -5,10 +5,7 @@
       :showBassClef="true"
     >
       <Staff
-        :notes="firstChord"
-      />
-      <Staff
-        :notes="secondChord"
+        :notes="cMajor"
       />
     </Notation>
 

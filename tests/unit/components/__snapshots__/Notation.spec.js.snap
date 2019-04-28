@@ -148,7 +148,7 @@ exports[`Notation renders 1`] = `
   <svg
     class="container"
     height="180"
-    width="3"
+    width="2"
   >
     <line
       style="stroke: black; stroke-width: 3;"
@@ -167,70 +167,70 @@ exports[`Notation renders 1`] = `
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="70"
       y2="70"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="60"
       y2="60"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="50"
       y2="50"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="40"
       y2="40"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="30"
       y2="30"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="110"
       y2="110"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="120"
       y2="120"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="130"
       y2="130"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="140"
       y2="140"
     />
     <line
       style="stroke: black; stroke-width: 1;"
       x1="0"
-      x2="3"
+      x2="2"
       y1="150"
       y2="150"
     />

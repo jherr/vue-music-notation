@@ -144,7 +144,7 @@ export default {
 
     let width = this.showBrace ? 45 : info.bothSides ? 31 : 20;
     if (this.showEnd && !this.showBrace && !this.notes) {
-      width = 3;
+      width = 2;
     }
 
     if (info.hasSharp) {
@@ -287,7 +287,7 @@ export default {
 
 <style scoped>
 .container {
-  display: inline;
+  display: inline-block;
 }
 .active {
   background-color: lightblue;
