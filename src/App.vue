@@ -46,21 +46,10 @@
 </template>
 
 <script>
-import Notation from './components/Notation.vue'
-import Staff from './components/Staff.vue'
-import Keyboard from './components/Keyboard.vue'
-import Tabulature from './components/Tabulature.vue'
-
 import utilities from './components/utilities';
 
 export default {
   name: 'app',
-  components: {
-    Notation,
-    Staff,
-    Keyboard,
-    Tabulature,
-  },
   data() {
     const trebleNotes = [];
     for (let note = 60; note < 84; note++) {

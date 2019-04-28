@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-music ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "main": "src/index.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
