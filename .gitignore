@@ -2,6 +2,7 @@
 node_modules
 /dist
 /coverage
+/pages
 
 # local env files
 .env.local

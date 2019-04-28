@@ -2,6 +2,8 @@
 
 This is a set of components for rendering different forms of musical notations.
 
+Here is a [demo](https://jherr.github.io/vue-music-notation/) if you don't want to clone this and run it for yourself.
+
 ## Installation
 
 In the terminal:

@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1>Western Music Notation</h1>
+
     <Notation
       :showTrebleClef="true"
       :showBassClef="true"
@@ -32,9 +34,13 @@
       />
     </Notation>
 
+    <h1>Keyboard</h1>
+
     <Keyboard
       :notes="cMajor"
     />
+
+    <h1>Tabulature</h1>
 
     <Tabulature
       :chords="tabChords"
