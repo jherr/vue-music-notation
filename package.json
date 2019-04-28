@@ -1,10 +1,9 @@
 {
-  "name": "music",
+  "name": "vue-music-notation",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-music ./src/index.js",
+    "build": "vue-cli-service build --target lib --name vue-music-notation ./src/index.js",
     "lint": "vue-cli-service lint",
     "test": "npm run test:unit",
     "test:unit": "vue-cli-service test:unit --coverage"
