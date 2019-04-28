@@ -1,26 +1,87 @@
-# music
+# vue-music-notation
 
-## Project setup
-```
-yarn install
-```
+This is a set of components for rendering different forms of musical notations.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Installation
 
-### Compiles and minifies for production
-```
-yarn run build
+In the terminal:
+
+```bash
+yarn add vue-music-notation
 ```
 
-### Run your tests
-```
-yarn run test
+Then in your application:
+
+```js
+import music from 'vue-music-notation';
+import 'vue-music-notation/dist/vue-music-notation.css';
+
+Vue.use(music);
 ```
 
-### Lints and fixes files
+## Keyboard
+
+The `Keyboard` component displays specified notes on a piano keyboard:
+
+```html
+<Keyboard
+  :notes="[60,64,67]"
+/>
 ```
-yarn run lint
+
+And that looks like this:
+
+![Keyboard image](./images/keyboard.png)
+
+You can change the number of keys (`length`) on the keyboard as well as the starting note (`start`) using properties.
+
+## Tabulature
+
+For you guitarists there is a `Tabulature` component you can use to show guitar or bass tab (or really tab with any number of strings):
+
+```js
+<Tabulature
+  :chords="[ [ 0, 2, 2, 1, 0, 0 ], [ -1, -1, -1, 1, 2, 1 ] ]"
+/>
 ```
+
+Looks like this:
+
+![Tabulature](./images/keyboard.png)
+
+You can change the tuning by setting the `tuning` prompt with an array of note names.
+
+## Notation (Western Musical Notation)
+
+The most complex component in this collection is the `Notation` component that's used to display notes, intervals, and chords on a staff with clefs.
+
+Here is some example code:
+
+```js
+<Notation
+  :showTrebleClef="true"
+  :showBassClef="true"
+>
+  <Staff
+    :notes="[60,64,67]"
+  />
+</Notation>
+```
+
+This would give you this:
+
+![Notation with C Major](./images/staff-with-chord.png)
+
+You can use multiple `Staff` components in the slot to give a long series of notes, like so:
+
+![Notation with notes](./images/staff-with-notes.png)
+
+And you can also show a selection by setting the `active` property on a `Staff` element.
+
+![Notation with active items](./images/staff-with-active.png)
+
+## TODO
+
+* Key signatures in the notation
+* Horizontal Fretboard
+* Vertical Freboard
