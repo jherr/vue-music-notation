@@ -47,7 +47,7 @@ For you guitarists there is a `Tabulature` component you can use to show guitar 
 
 Looks like this:
 
-![Tabulature](./images/keyboard.png)
+![Tabulature](./images/tabulature.png)
 
 You can change the tuning by setting the `tuning` prompt with an array of note names.
 
